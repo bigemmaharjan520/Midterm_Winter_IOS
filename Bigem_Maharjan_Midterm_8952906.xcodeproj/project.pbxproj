@@ -14,6 +14,8 @@
 		286ED6F22B90C949003EFAF7 /* Bigem_Maharjan_Midterm_8952906.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 286ED6F02B90C949003EFAF7 /* Bigem_Maharjan_Midterm_8952906.xcdatamodeld */; };
 		286ED6F42B90C94A003EFAF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286ED6F32B90C94A003EFAF7 /* Assets.xcassets */; };
 		286ED6F72B90C94A003EFAF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286ED6F52B90C94A003EFAF7 /* LaunchScreen.storyboard */; };
+		28BCFAAF2B9F504500710301 /* CanadaCitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BCFAAE2B9F504500710301 /* CanadaCitiesViewController.swift */; };
+		28BCFAB32B9F616F00710301 /* FunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BCFAB22B9F616F00710301 /* FunctionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		286ED6F32B90C94A003EFAF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		286ED6F62B90C94A003EFAF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		286ED6F82B90C94A003EFAF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28BCFAAE2B9F504500710301 /* CanadaCitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaCitiesViewController.swift; sourceTree = "<group>"; };
+		28BCFAB22B9F616F00710301 /* FunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				286ED6E92B90C949003EFAF7 /* SceneDelegate.swift */,
 				286ED6EB2B90C949003EFAF7 /* ViewController.swift */,
 				286ED6ED2B90C949003EFAF7 /* Main.storyboard */,
+				28BCFAAE2B9F504500710301 /* CanadaCitiesViewController.swift */,
+				28BCFAB22B9F616F00710301 /* FunctionViewController.swift */,
 				286ED6F32B90C94A003EFAF7 /* Assets.xcassets */,
 				286ED6F52B90C94A003EFAF7 /* LaunchScreen.storyboard */,
 				286ED6F82B90C94A003EFAF7 /* Info.plist */,
@@ -141,10 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28BCFAB32B9F616F00710301 /* FunctionViewController.swift in Sources */,
 				286ED6EC2B90C949003EFAF7 /* ViewController.swift in Sources */,
 				286ED6E82B90C949003EFAF7 /* AppDelegate.swift in Sources */,
 				286ED6EA2B90C949003EFAF7 /* SceneDelegate.swift in Sources */,
 				286ED6F22B90C949003EFAF7 /* Bigem_Maharjan_Midterm_8952906.xcdatamodeld in Sources */,
+				28BCFAAF2B9F504500710301 /* CanadaCitiesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,16 +297,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QLTN58446L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bigem_Maharjan_Midterm_8952906/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Midterm Winter";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +318,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.midtem.secondpart.Bigem-Maharjan-Midterm-8952906";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,16 +332,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QLTN58446L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bigem_Maharjan_Midterm_8952906/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Midterm Winter";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,6 +353,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.midtem.secondpart.Bigem-Maharjan-Midterm-8952906";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
